@@ -44,7 +44,7 @@ public class CommandPatternTest
         // Login with pin
 
         // Select Menu "A"
- 
+        app.execute("A");
         // Assertion
         assertEquals("MyCards", app.screen());            
     }
