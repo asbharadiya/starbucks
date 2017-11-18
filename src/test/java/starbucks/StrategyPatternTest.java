@@ -41,24 +41,36 @@ public class StrategyPatternTest
     public void testLandscape()
     {
         // Login to App
-
+        app.touch(1,5) ;
+		app.touch(2,5) ;
+		app.touch(3,5) ;
+		app.touch(1,6) ;
+        
+        app.execute("A");
         // Put in Landscape Mode   
-
+        app.landscape();
         // Validate App is in Landscape Mode 
         // (replace with correct assert)
-        assertTrue( false ) ;     
+        app.execute("B");
+        assertEquals("MyCards", app.screen());
     }
 
     @Test
     public void testPortrait()
     {
         // Login to App
-
+        app.touch(1,5) ;
+		app.touch(2,5) ;
+		app.touch(3,5) ;
+		app.touch(1,6) ;
+        
+        app.execute("A");
         // Put in Portrait Mode   
-
+        app.potrait();
         // Validate App is in Landscape Mode 
         // (replace with correct assert)
-        assertTrue( false ) ;       
+        app.execute("B");
+        assertEquals("Payments", app.screen());       
     }
 
     
