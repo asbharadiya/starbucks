@@ -66,7 +66,7 @@ public class StrategyPatternTest
         
         app.execute("A");
         // Put in Portrait Mode   
-        app.potrait();
+        app.portrait();
         // Validate App is in Landscape Mode 
         // (replace with correct assert)
         app.execute("B");
