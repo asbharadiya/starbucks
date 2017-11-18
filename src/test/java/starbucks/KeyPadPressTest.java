@@ -1,6 +1,3 @@
-
-
-
 package starbucks ;
 
 
@@ -41,109 +38,85 @@ public class KeyPadPressTest
     @Test
     public void testOne()
     {
-        // Press 1
-
-        // Assertion (Replace with appropriate test)
-        assertTrue( false );
+        kp.touch(1, 5);
+        assertEquals(kp.lastKey(), "1");
     }
 
    @Test
     public void testTwo()
     {
-        // Press 2
-
-        // Assertion (Replace with appropriate test)
-        assertTrue( false );
+        kp.touch(2, 5);
+        assertEquals(kp.lastKey(), "2");
     }
 
    @Test
     public void testThree()
     {
-        // Press 3
-
-        // Assertion (Replace with appropriate test)
-        assertTrue( false );
+        kp.touch(3, 5);
+        assertEquals(kp.lastKey(), "3");
     }
 
    @Test
     public void testFour()
     {
-        // Press 4
-
-        // Assertion (Replace with appropriate test)
-        assertTrue( false );
+        kp.touch(1, 6);
+        assertEquals(kp.lastKey(), "4");
     }
 
    @Test
     public void testFive()
     {
-        // Press 5
-
-        // Assertion (Replace with appropriate test)
-        assertTrue( false );
+        kp.touch(2, 6);
+        assertEquals(kp.lastKey(), "5");
     }
 
    @Test
     public void testSix()
     {
-        // Press 6
-
-        // Assertion (Replace with appropriate test)
-        assertTrue( false );
+        kp.touch(3, 6);
+        assertEquals(kp.lastKey(), "6");
     }
 
    @Test
     public void testSeven()
     {
-        // Press 7
-
-        // Assertion (Replace with appropriate test)
-        assertTrue( false );
+        kp.touch(1, 7);
+        assertEquals(kp.lastKey(), "7");
     }
 
    @Test
     public void testEight()
     {
-        // Press 8
-
-        // Assertion (Replace with appropriate test)
-        assertTrue( false );
+        kp.touch(2, 7);
+        assertEquals(kp.lastKey(), "8");
     }
 
    @Test
     public void testNine()
     {
-        // Press 9
-
-        // Assertion (Replace with appropriate test)
-        assertTrue( false );
+        kp.touch(3, 7);
+        assertEquals(kp.lastKey(), "9");
     }
 
    @Test
     public void testZero()
     {
-        // Press 0
-
-        // Assertion (Replace with appropriate test)
-        assertTrue( false );
+        kp.touch(2, 8);
+        assertEquals(kp.lastKey(), "0");
     }
 
    @Test
     public void testBackspace()
     {
-        // Press Backspace
-
-        // Assertion (Replace with appropriate test)
-        assertTrue( false );
+        kp.touch(3, 8);
+        assertEquals(kp.lastKey(), "X");
     }
 
    @Test
     public void testNoKey()
     {
-        // Press Empty Key
-
-        // Assertion (Replace with appropriate test)
-        assertTrue( false );
+        kp.touch(1, 8);
+        assertEquals(kp.lastKey(), " ");
     }
 
 
